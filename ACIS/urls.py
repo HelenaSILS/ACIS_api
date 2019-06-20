@@ -18,9 +18,11 @@ from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
 from api.viewsets import InformacoesVooViewSet
+from api.viewsets import PlanosVooViewSet
 
 router = routers.DefaultRouter()
 router.register(r'informacoesvoo', InformacoesVooViewSet)
+router.register(r'planosvoo', PlanosVooViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
