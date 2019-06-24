@@ -1,11 +1,12 @@
 from django.db import models
 from planos_voo.models import PlanoVoo
-from registro_comunicacao.models import registroComunicacao
+from registro_comunicacao.models import RegistroComunicacao
 
 class InformacoesVoo (models.Model):
-    registroComunicacao = models.ManyToManyField(registroComunicacao)
+    idInfo = models.TextField(null=True)
+    #registroComunicacao = models.ManyToManyField(registroComunicacao)
     data = models.DateField()
     planosVoo = models.ManyToManyField(PlanoVoo)
 
     def __str__(self):
-        return self.data
+        return self.idInfo
