@@ -6,6 +6,6 @@ class InformacoesVooViewSet(ModelViewSet):
 
     queryset = InformacoesVoo.objects.all()
     serializer_class = InformacoesVooSerializer
-    filter_fields = ('idInfo', 'data')
+    filter_fields = ('Info', 'data')
 
 

@@ -4,11 +4,11 @@ from eventos_voo.models import EventoVoo
 #from registro_comunicacao.models import RegistroComunicacao
 
 class InformacoesVoo (models.Model):
-    idInfo = models.TextField(null=True)
+    Info = models.TextField(null=True)
     #registroComunicacao = models.ManyToManyField(RegistroComunicacao)
     data = models.DateField()
-    planosVoo = models.ManyToManyField(PlanoVoo)
-    eventosVoo = models.ManyToManyField(EventoVoo)
+    planosVoo = models.ManyToManyField(PlanoVoo, blank=True)
+    eventosVoo = models.ManyToManyField(EventoVoo, blank=True)
 
 
     def __str__(self):
