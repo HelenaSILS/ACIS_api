@@ -4,6 +4,6 @@ from informacoes_voo.models import InformacoesVoo
 class InformacoesVooSerializer (HyperlinkedModelSerializer):
     class Meta:
         model = InformacoesVoo
-        fields = ('data', 'idInfo', 'planosVoo', 'eventoVoo')
+        fields = ('data', 'idInfo', 'planosVoo', 'eventosVoo')
 
 

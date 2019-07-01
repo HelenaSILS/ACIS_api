@@ -8,7 +8,7 @@ class InformacoesVoo (models.Model):
     #registroComunicacao = models.ManyToManyField(RegistroComunicacao)
     data = models.DateField()
     planosVoo = models.ManyToManyField(PlanoVoo)
-    eventoVoo = models.ManyToManyField(EventoVoo)
+    eventosVoo = models.ManyToManyField(EventoVoo)
 
 
     def __str__(self):
