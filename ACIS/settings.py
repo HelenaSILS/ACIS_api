@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'informacoes_voo',
     'planos_voo',
     'registro_comunicacao',
+    'eventos_voo',
 ]
 
 REST_FRAMEWORK = {

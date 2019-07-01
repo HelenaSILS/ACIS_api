@@ -4,4 +4,4 @@ from planos_voo.models import PlanoVoo
 class PlanoVooSerializer (ModelSerializer):
     class Meta:
         model = PlanoVoo
-        fields = ('idPlanoVoo', 'data')
+        fields = ('idPlanoVoo', 'data', 'idAeronave', 'aerodromoPartida', 'aerodromoDestino', 'piloto', 'duracaoHoras', 'duracaoMinutos')

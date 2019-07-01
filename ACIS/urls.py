@@ -21,10 +21,14 @@ from rest_framework.schemas import get_schema_view
 from rest_framework.authtoken.views import obtain_auth_token
 from informacoes_voo.api.viewsets import InformacoesVooViewSet
 from planos_voo.api.viewsets import PlanosVooViewSet
+from registro_comunicacao.api.viewsets import RegistroComunicacaoViewSet
+from eventos_voo.api.viewsets import EventoVooViewSet
 
 router = routers.DefaultRouter()
 router.register(r'informacoesvoo', InformacoesVooViewSet)
 router.register(r'planosvoo', PlanosVooViewSet)
+router.register('registrocomunicacao', RegistroComunicacaoViewSet)
+router.register('eventosvoo', EventoVooViewSet)
 
 schema_view = get_schema_view(title='ACIS API')
 
